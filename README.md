@@ -1,4 +1,12 @@
-### Hi there 👋
+### Hi there 👋 I'm @Lancetnik (Pastukhov Nikita)
+
+I'm a fullstack developer living and working in Russia. :ru:
+
+I have been building APIs and tools for Machine Learning and data systems, with different teams and organizations. 🌎
+
+I created [**Propan**](https://lancetnik.github.io/Propan/)🚀 and currently spend a huge part of my time to work on it. 🤓
+
+So, if my open source projects are useful for your **product/company**, please tell me about it [here](https://github.com/Lancetnik/Propan/discussions/categories/show-and-tell) - your feedback is very important for me.
 
 <!--
 **Lancetnik/Lancetnik** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
