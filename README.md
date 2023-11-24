@@ -8,6 +8,8 @@ I ~~created [**Propan**](https://lancetnik.github.io/Propan/)~~ built [**FastStr
 
 So, if my open source projects are useful for your **product/company**, please tweet with [*@diementros*](https://twitter.com/diementros) or product mention about - your feedback is very important for me.
 
+![](https://komarev.com/ghpvc/?username=Lancetnik&base=500)
+
 <!--
 **Lancetnik/Lancetnik** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
