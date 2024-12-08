@@ -8,6 +8,8 @@ I ~~created [**Propan**](https://lancetnik.github.io/Propan/)~~ built [**FastStr
 
 So, if my open source projects are useful for your **product/company**, please tweet with [*@diementros*](https://twitter.com/diementros) or product mention about - your feedback is very important for me.
 
+Also, you can **support** me using [CloudTips](https://pay.cloudtips.ru/p/0558c54a) (for Russia)
+
 ![](https://komarev.com/ghpvc/?username=Lancetnik)
 
 <!--
