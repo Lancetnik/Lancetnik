@@ -17,8 +17,10 @@
 
 - **[FastStream](https://github.com/airtai/faststream)** &nbsp;![stars](https://img.shields.io/github/stars/airtai/faststream?style=flat&label=%E2%AD%90) — modern framework for event-driven services over Kafka, RabbitMQ, MQTT, NATS & Redis. 1M+ installs.
 - **[AG2](https://github.com/ag2ai/ag2)** &nbsp;![stars](https://img.shields.io/github/stars/ag2ai/ag2?style=flat&label=%E2%AD%90) — AG2 (formerly AutoGen): the open-source AgentOS for building multi-agent systems. I'm a core maintainer.
+- **[AG2 Assistant](https://github.com/ag2ai/ag2-assistant)** — open-source personal AI assistant on top of AG2: web UI, messaging channels & CLI, with the agent's work shown in the open.
 - **[FastDepends](https://github.com/Lancetnik/FastDepends)** &nbsp;![stars](https://img.shields.io/github/stars/Lancetnik/FastDepends?style=flat&label=%E2%AD%90) — FastAPI's Dependency Injection system, extracted and cleared of all HTTP logic. Sync & async.
 - **[Propan](https://lancetnik.github.io/Propan/)** — my first message-broker framework; the ideas grew into FastStream.
+- **[Awesome Engineering AI](https://github.com/Lancetnik/awesome-engineering-ai)** — curated list of tools you can actually install and use with your coding agent: skills, MCP servers, harnesses, CLIs. Personal verdicts, no hype.
 
 ## 🎤 Talks & writing
 
