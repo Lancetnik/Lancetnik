@@ -13,7 +13,7 @@
   "use strict";
 
   var ACCOUNT_CREATED = "2018-10-29";
-  var CACHE_KEY = "gh-os-cache-v2";
+  var CACHE_KEY = "gh-os-cache-v3";
   var CACHE_TTL = 6 * 60 * 60 * 1000; // 6 hours
   var API = "https://api.github.com";
 
@@ -49,6 +49,16 @@
     } catch (e) {
       return null;
     }
+  }
+
+  // a snapshot taken before the page's repo list changed is worse than no snapshot:
+  // slugs it never saw resolve to -1 and sort to the end of the grid
+  function covers(data, list) {
+    if (!data || !data.stars) return false;
+    for (var i = 0; i < list.length; i++) {
+      if (typeof data.stars[list[i]] !== "number") return false;
+    }
+    return true;
   }
 
   function writeCache(data) {
@@ -103,7 +113,8 @@
         items
           .map(function (node) {
             var slug = repoFromAnchor(node.querySelector(".repo__stars") || node);
-            return { node: node, stars: (slug && data.stars[slug]) || -1 };
+            var n = slug ? data.stars[slug] : undefined;
+            return { node: node, stars: typeof n === "number" ? n : -1 };
           })
           .sort(function (a, b) {
             return b.stars - a.stars;
@@ -119,11 +130,12 @@
   // tenure is deterministic - compute locally, no request needed
   (function setYears() {
     var el = document.querySelector('[data-gh-stat="years"]');
-    if (el) el.textContent = yearsSince(ACCOUNT_CREATED) + " лет";
+    if (el) el.textContent = yearsSince(ACCOUNT_CREATED) + " " + window.I18N.t("js.yearsUnit");
   })();
 
   // ---- 1) instant paint from cache ----
   var cached = readCache();
+  if (!covers(cached, slugs)) cached = null;
   if (cached) apply(cached);
 
   // ---- 2) refresh from network (skip if cache is still warm) ----

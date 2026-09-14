@@ -10,9 +10,10 @@
   var PROXY = "https://github-contributions-api.jogruber.de/v4/Lancetnik?y=last";
   var CACHE_KEY = "gh-contrib-cache-v1";
   var CACHE_TTL = 12 * 60 * 60 * 1000;
-  var MONTHS = ["янв", "фев", "мар", "апр", "май", "июн", "июл", "авг", "сен", "окт", "ноя", "дек"];
+  var MONTHS = window.I18N.t("js.hm.months");
 
   function plural(n) {
+    if (window.I18N.lang !== "ru") return n === 1 ? "contribution" : "contributions";
     var a = Math.abs(n) % 100, b = a % 10;
     if (a > 10 && a < 20) return "вкладов";
     if (b > 1 && b < 5) return "вклада";
@@ -85,16 +86,18 @@
     foot.className = "hm__foot";
     var totalEl = document.createElement("span");
     totalEl.className = "hm__total";
-    totalEl.textContent = total + " " + plural(total) + " за год";
+    totalEl.textContent = window.I18N.t("js.hm.total")
+      .replace("{n}", total)
+      .replace("{w}", plural(total));
     var legend = document.createElement("div");
     legend.className = "hm__legend";
-    legend.appendChild(document.createTextNode("меньше"));
+    legend.appendChild(document.createTextNode(window.I18N.t("js.hm.less")));
     for (var l = 0; l <= 4; l++) {
       var c = document.createElement("span");
       c.className = "hm__cell l" + l;
       legend.appendChild(c);
     }
-    legend.appendChild(document.createTextNode("больше"));
+    legend.appendChild(document.createTextNode(window.I18N.t("js.hm.more")));
     foot.appendChild(totalEl);
     foot.appendChild(legend);
 

@@ -1,13 +1,16 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Видео - Никита Пастухов</title>
-<meta name="description" content="Доклады Никиты Пастухова (PiterPy, Podlodka), гостевые подкасты и стримы про Python, OpenSource и AI-агентов." />
+<title>Videos - Nikita Pastukhov</title>
+<meta name="description" content="Nikita Pastukhov's talks (PiterPy, Podlodka), guest podcasts and streams about Python, OpenSource and AI agents." />
+<link rel="alternate" hreflang="en" href="videos.html" />
+<link rel="alternate" hreflang="ru" href="ru/videos.html" />
+<link rel="alternate" hreflang="x-default" href="videos.html" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Видео - Никита Пастухов" />
-<meta property="og:description" content="Доклады Никиты Пастухова (PiterPy, Podlodka), гостевые подкасты и стримы про Python, OpenSource и AI-агентов." />
+<meta property="og:title" content="Videos - Nikita Pastukhov" />
+<meta property="og:description" content="Nikita Pastukhov's talks (PiterPy, Podlodka), guest podcasts and streams about Python, OpenSource and AI agents." />
 <meta property="og:image" content="https://gravatar.com/avatar/41662bad8c75bfce6720c4a15f1ccfaf?s=512" />
 <meta name="twitter:card" content="summary" />
 
@@ -18,10 +21,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
-<script>
-/* jump to the saved design version of this page before first paint (toggle logic in design-switch.js) */
-(function(){try{var f={press:"press/",term:"terminal/"};var d=localStorage.getItem("site-design");if(f[d]){var p=location.pathname.split("/").pop()||"index.html";location.replace(f[d]+p);}}catch(e){}})();
-</script>
+<script src="i18n.js"></script>
 </head>
 <body>
 
@@ -29,15 +29,14 @@
 
 <header class="nav" id="top">
   <a class="nav__brand" href="index.html"><span class="nav__dot"></span> nikita pastukhov</a>
-  <nav class="nav__links" aria-label="Разделы">
+  <nav class="nav__links" aria-label="Sections">
     <a href="opensource.html">Open Source</a>
-    <a href="articles.html">Статьи</a>
-    <a href="videos.html" class="is-active" aria-current="page">Видео</a>
+    <a href="articles.html">Articles</a>
+    <a href="videos.html" class="is-active" aria-current="page">Videos</a>
   </nav>
-  <div class="dtoggle" data-design-toggle role="group" aria-label="Стиль оформления">
-    <button type="button" class="dtoggle__btn" data-design="stream" title="Stream" aria-label="Дизайн Stream" aria-pressed="false"></button>
-    <button type="button" class="dtoggle__btn" data-design="press" title="Пресса" aria-label="Дизайн Пресса" aria-pressed="false"></button>
-    <button type="button" class="dtoggle__btn" data-design="term" title="Терминал" aria-label="Дизайн Терминал" aria-pressed="false"></button>
+  <div class="ltoggle" role="group" aria-label="Language">
+    <span class="ltoggle__btn is-active" aria-current="true">EN</span>
+    <a class="ltoggle__btn" href="ru/videos.html" hreflang="ru" lang="ru">RU</a>
   </div>
   <a class="btn btn--accent nav__cta" href="https://t.me/fastnewsdev" target="_blank" rel="noopener">Telegram</a>
 </header>
@@ -45,105 +44,106 @@
 <main>
   <!-- TALKS -->
   <section class="section" id="talks">
-    <h1 class="section__title reveal">Доклады</h1>
+    <h1 class="section__title reveal">Talks</h1>
+    <p class="sub-note reveal">The talks, streams and podcasts below are in Russian.</p>
     <div class="media-grid">
       <a class="media reveal" href="https://www.youtube.com/watch?v=cjTZxwTK6PQ" target="_blank" rel="noopener">
         <span class="media__thumb">
           <img loading="lazy" src="https://img.youtube.com/vi/cjTZxwTK6PQ/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/cjTZxwTK6PQ/hqdefault.jpg'" alt="" />
           <span class="media__play" aria-hidden="true">▶</span>
         </span>
-        <span class="media__meta"><strong>Open Source изнутри: FastStream</strong><em>PiterPy 2025</em></span>
+        <span class="media__meta"><strong>Open Source from the inside: FastStream</strong><em>PiterPy 2025</em></span>
       </a>
       <a class="media reveal" href="https://www.youtube.com/watch?v=33bugga930w" target="_blank" rel="noopener">
         <span class="media__thumb">
           <img loading="lazy" src="https://img.youtube.com/vi/33bugga930w/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/33bugga930w/hqdefault.jpg'" alt="" />
           <span class="media__play" aria-hidden="true">▶</span>
         </span>
-        <span class="media__meta"><strong>Брокеры сообщений и Python в 2024-м</strong><em>PiterPy 2024</em></span>
+        <span class="media__meta"><strong>Message brokers and Python in 2024</strong><em>PiterPy 2024</em></span>
       </a>
       <a class="media reveal" href="https://www.youtube.com/watch?v=_P7lgV5bKVw" target="_blank" rel="noopener">
         <span class="media__thumb">
           <img loading="lazy" src="https://img.youtube.com/vi/_P7lgV5bKVw/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/_P7lgV5bKVw/hqdefault.jpg'" alt="" />
           <span class="media__play" aria-hidden="true">▶</span>
         </span>
-        <span class="media__meta"><strong>Брокеры сообщений и почему с ними все сложно</strong><em>Podlodka Python Crew</em></span>
+        <span class="media__meta"><strong>Message brokers, and why they are such a pain</strong><em>Podlodka Python Crew</em></span>
       </a>
     </div>
   </section>
 
   <!-- VIDEOS + PODCASTS -->
   <section class="section" id="videos">
-    <h2 class="section__title reveal">Видео и подкасты</h2>
+    <h2 class="section__title reveal">Videos and podcasts</h2>
     <div class="filters reveal" data-filter-group>
-      <button type="button" class="filter__btn is-active" data-filter="all">Все</button>
-      <button type="button" class="filter__btn" data-filter="video">#видео</button>
-      <button type="button" class="filter__btn" data-filter="stream">#стрим</button>
-      <button type="button" class="filter__btn" data-filter="podcast">#подкаст</button>
+      <button type="button" class="filter__btn is-active" data-filter="all">All</button>
+      <button type="button" class="filter__btn" data-filter="video">#video</button>
+      <button type="button" class="filter__btn" data-filter="stream">#stream</button>
+      <button type="button" class="filter__btn" data-filter="podcast">#podcast</button>
     </div>
     <div class="rows">
       <a class="row reveal" data-type="podcast" href="https://www.youtube.com/watch?v=z8vwPn6hj7U" target="_blank" rel="noopener">
         <span class="row__thumb"><img loading="lazy" src="https://img.youtube.com/vi/z8vwPn6hj7U/hqdefault.jpg" alt="" /></span>
         <span class="row__meta">
-          <strong>Tiangolo меня лично не любит</strong>
-          <em>Подкаст · PyLounge</em>
+          <strong>Tiangolo personally dislikes me</strong>
+          <em>Podcast · PyLounge</em>
         </span>
-        <span class="row__go" aria-hidden="true">Смотреть ↗</span>
+        <span class="row__go" aria-hidden="true">Watch ↗</span>
       </a>
       <a class="row reveal" data-type="stream" href="https://www.youtube.com/watch?v=oE7fhJFcSJ8" target="_blank" rel="noopener">
         <span class="row__thumb"><img loading="lazy" src="https://img.youtube.com/vi/oE7fhJFcSJ8/hqdefault.jpg" alt="" /></span>
         <span class="row__meta">
-          <strong>Вайбкодим конфиги в FastStream</strong>
-          <em>Стрим · Вялые Питоны</em>
+          <strong>Vibe-coding configs in FastStream</strong>
+          <em>Stream · Vyalye Pitony</em>
         </span>
-        <span class="row__go" aria-hidden="true">Смотреть ↗</span>
+        <span class="row__go" aria-hidden="true">Watch ↗</span>
       </a>
       <a class="row reveal" data-type="stream" href="https://www.youtube.com/watch?v=laJQcNAqxc0" target="_blank" rel="noopener">
         <span class="row__thumb"><img loading="lazy" src="https://img.youtube.com/vi/laJQcNAqxc0/hqdefault.jpg" alt="" /></span>
         <span class="row__meta">
-          <strong>Вайбкодим security компоненты в django-modern-rest (или нет)</strong>
-          <em>Стрим · Вялые Питоны</em>
+          <strong>Vibe-coding security components in django-modern-rest (or not)</strong>
+          <em>Stream · Vyalye Pitony</em>
         </span>
-        <span class="row__go" aria-hidden="true">Смотреть ↗</span>
+        <span class="row__go" aria-hidden="true">Watch ↗</span>
       </a>
       <a class="row reveal" data-type="podcast" href="https://www.youtube.com/watch?v=tBgaOBnpZyg" target="_blank" rel="noopener">
         <span class="row__thumb"><img loading="lazy" src="https://img.youtube.com/vi/tBgaOBnpZyg/hqdefault.jpg" alt="" /></span>
         <span class="row__meta">
-          <strong>ИИ ломает open source</strong>
-          <em>Подкаст · Гриненко про</em>
+          <strong>AI is breaking open source</strong>
+          <em>Podcast · Grinenko Pro</em>
         </span>
-        <span class="row__go" aria-hidden="true">Смотреть ↗</span>
+        <span class="row__go" aria-hidden="true">Watch ↗</span>
       </a>
       <a class="row reveal" data-type="podcast" href="https://www.youtube.com/watch?v=j17cSh023qs&t=65s" target="_blank" rel="noopener">
         <span class="row__thumb"><img loading="lazy" src="https://img.youtube.com/vi/j17cSh023qs/hqdefault.jpg" alt="" /></span>
         <span class="row__meta">
-          <strong>ИИ-агенты: MCP, скиллы, A2A, AG-UI и мультиагенты</strong>
-          <em>Подкаст · Гриненко про</em>
+          <strong>AI agents: MCP, skills, A2A, AG-UI and multi-agents</strong>
+          <em>Podcast · Grinenko Pro</em>
         </span>
-        <span class="row__go" aria-hidden="true">Смотреть ↗</span>
+        <span class="row__go" aria-hidden="true">Watch ↗</span>
       </a>
       <a class="row reveal" data-type="podcast" href="https://www.youtube.com/watch?v=cMv1jWEOFEI&t=3s" target="_blank" rel="noopener">
         <span class="row__thumb"><img loading="lazy" src="https://img.youtube.com/vi/cMv1jWEOFEI/hqdefault.jpg" alt="" /></span>
         <span class="row__meta">
-          <strong>#разгружаем: про айти, выгорание и рыночек найма</strong>
-          <em>Подкаст · Программирование и иже с ним</em>
+          <strong>#unloading: on IT, burnout and the hiring market</strong>
+          <em>Podcast · Programming and All That</em>
         </span>
-        <span class="row__go" aria-hidden="true">Смотреть ↗</span>
+        <span class="row__go" aria-hidden="true">Watch ↗</span>
       </a>
       <a class="row reveal" data-type="video" href="https://www.youtube.com/watch?v=Qf4r8xV-YNk" target="_blank" rel="noopener">
         <span class="row__thumb"><img loading="lazy" src="https://img.youtube.com/vi/Qf4r8xV-YNk/hqdefault.jpg" alt="" /></span>
         <span class="row__meta">
-          <strong>Находки в опенсорсе: FastStream</strong>
-          <em>Видео · Никита Соболев</em>
+          <strong>Open source finds: FastStream</strong>
+          <em>Video · Nikita Sobolev</em>
         </span>
-        <span class="row__go" aria-hidden="true">Смотреть ↗</span>
+        <span class="row__go" aria-hidden="true">Watch ↗</span>
       </a>
       <a class="row reveal" data-type="stream" href="https://www.youtube.com/watch?v=W9Hd5dfxjIU&t=7175s" target="_blank" rel="noopener">
         <span class="row__thumb"><img loading="lazy" src="https://img.youtube.com/vi/W9Hd5dfxjIU/hqdefault.jpg" alt="" /></span>
         <span class="row__meta">
-          <strong>Работаем над lazy import'ами в CPython</strong>
-          <em>Стрим · Вялые Питоны</em>
+          <strong>Working on lazy imports in CPython</strong>
+          <em>Stream · Vyalye Pitony</em>
         </span>
-        <span class="row__go" aria-hidden="true">Смотреть ↗</span>
+        <span class="row__go" aria-hidden="true">Watch ↗</span>
       </a>
     </div>
   </section>
@@ -152,11 +152,11 @@
 <footer class="foot" id="contact">
   <div class="foot__inner">
     <div class="foot__brand">
-      <span class="foot__name">Никита Пастухов</span>
-      <p class="foot__tag">Python-инженер · автор FastStream · co-maintainer AG2</p>
+      <span class="foot__name">Nikita Pastukhov</span>
+      <p class="foot__tag">Python engineer · FastStream author · AG2 co-maintainer</p>
       <a class="foot__mail" href="mailto:nikita@pastukhov-dev.ru">nikita@pastukhov-dev.ru</a>
     </div>
-    <ul class="social foot__social" aria-label="Соцсети">
+    <ul class="social foot__social" aria-label="Social links">
       <li><a href="https://t.me/fastnewsdev" target="_blank" rel="noopener">Telegram</a></li>
       <li><a href="https://github.com/Lancetnik" target="_blank" rel="noopener">GitHub</a></li>
       <li><a href="https://www.linkedin.com/in/nikita-pastukhov/" target="_blank" rel="noopener">LinkedIn</a></li>
@@ -166,11 +166,10 @@
     </ul>
   </div>
   <div class="foot__bottom">
-    <span>© 2026 Никита Пастухов</span>
+    <span>© 2026 Nikita Pastukhov</span>
   </div>
 </footer>
 
-<script src="design-switch.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
