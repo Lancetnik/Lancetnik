@@ -2,6 +2,7 @@
 
 **FastStream author · AG2 maintainer · OSS contributor**
 
+[![Website](https://img.shields.io/badge/Website-pastukhov.me-7C5CFF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://pastukhov.me)
 [![Telegram](https://img.shields.io/badge/Telegram-%40fastnewsdev-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/fastnewsdev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Nikita%20Pastukhov-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nikita-pastukhov/)
 [![Habr](https://img.shields.io/badge/Habr-blog-65A3BE?style=for-the-badge&logo=habr&logoColor=white)](https://habr.com/ru/users/Propan671/)
@@ -29,6 +30,7 @@
 
 ## 📫 Reach me
 
+- **Website**: [pastukhov.me](https://pastukhov.me)
 - **Telegram** (RU): [@fastnewsdev](https://t.me/fastnewsdev)
 - **LinkedIn** (EN): [Nikita Pastukhov](https://www.linkedin.com/in/nikita-pastukhov/)
 - **X / Twitter** (EN): [@diementros](https://x.com/diementros)
